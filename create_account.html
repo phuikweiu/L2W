@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Create a New Account</title>
+	</head>
+	<body>
+		<form action="handle_account_info.php" method="post">
+			<div align="center" style="width:50%;">
+				<fieldset>
+					<legend><b>Create a New Account</b></legend>
+				<table style="text-align:left;" >
+				  <tr>
+					  <td align="right">Email: </td>
+					  <td align="center"><input type="text" name="email"></td>
+				  </tr>
+				  <tr>
+					  <td align="right">UserName: </td>
+					  <td align="center"><input type="text" name="username"></td>
+				  </tr>
+				  <tr>
+					  <td align="right">PassWord: </td>
+					  <td align="center"><input type="password" name="pswd"></td>
+				  </tr>
+				  <tr>
+					  <td align="right">Rep-PassWord: </td>
+					  <td align="center"><input type="password" name="rep_pswd"></td>
+				  </tr>
+				  <tr>
+					  <td style="vertical-align:top; text-align:right;">Gender: </td>
+					<td>
+						<input type="radio" name="sex" value="male">Male<br \>
+						<input type="radio" name="sex" value="female">Female<br \>
+						<input type="radio" name="sex" value="other">Other<br \>
+					</td>
+				  </tr>
+				  <tr>
+					  <td align="right">Age: </td>
+					  <td align="center"><input type="text" name="age" maxlength="2"</td>
+				  </tr>
+				  <tr>
+					  <td align="right">Address: </td>
+					  <td align="center"><select name="address">
+							  <option value="Beijing">Beijing</option>
+							  <option value="Shanghai">Shanghai</option>
+							  <option value="Chongqing">Chongqing</option>
+							  <option value="Henan">Henan</option>
+					  </select></td>
+				  </tr>
+				  <tr>
+					  <td colspan="2" align="right"><input type="submit" value="Submit Account Info">&nbsp<input type="reset" value="Reset"></td>
+				  </tr>
+			  </table>
+			  </fieldset>
+		  </div>
+
+	</body>
+</html>
